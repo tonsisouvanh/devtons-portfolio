@@ -1,14 +1,14 @@
 import About from "@/components/About";
 import BackgroundAnimation from "@/components/BackgroundAnimation";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
-import { GoogleTagManager } from "@next/third-parties/google";
 import React from "react";
 
 const HomePage = () => {
   return (
     <>
-      <GoogleTagManager gtmId={process.env.NEXT_PUBLIC_GA} />
+      <GoogleAnalytics />
       <div className="min-h-screen relative flex flex-col gap-20 lg:gap-32">
         <div className="fixed top-0 left-0 right-0 -z-20 h-full w-full">
           <BackgroundAnimation />
